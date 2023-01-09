@@ -1,16 +1,14 @@
-//Ability to create a Address Book Contact with first and last names, address, city, state, zip, phone number and email...
-class Contact{
-    constructor(firstName, lastName, address, city, state, zip, phoneNo,email){
+class Contacts {
+    constructor(firstName, lastName, address, city, state, zip, phoneNumber, email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.phoneNo = phoneNo;
+        this.phoneNumber = phoneNumber;
         this.email = email;
     }
-
     set firstName(firstName) {
         let pattern = RegExp('^[A-Z]{1}[a-z]{2,}$');
         if(pattern.test(firstName)) {
@@ -100,23 +98,14 @@ class Contact{
     get email() {
         return this._email;
     }
-
-    toString(){
-        return "First Name= "+ this.firstName
-            + " Last Name= "+ this.lastName
-            + " Address= "+ this.address
-            + " City= "+ this.city
-            + " State= "+ this.state
-            + " Zip= "+ this.zip
-            + " Phone No= "+ this.phoneNo
-            + " Email = "+ this.email;
+    toString() {
+        return "First Name= " + this.firstName
+            + " Last Name= " + this.lastName
+            + " Address= " + this.address
+            + " City= " + this.city
+            + " State= " + this.state
+            + " Zip= " + this.zip
+            + " Phone Number = " + this.phoneNumber
+            + " Email = " + this.email;
     }
-}
-
-try{
-    let contact1 = new Contact("Surabhi","Sanjan","113/3","Patna","Bihar","121002","8989898989","kdxji@gm");
-    console.log(contact1.toString());
-
-} catch(e) {
-    console.log(e);
 }
