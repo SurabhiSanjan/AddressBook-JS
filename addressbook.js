@@ -26,13 +26,13 @@ class Contact{
     }
 }
 
-// try
-// {
-//     let contact1 = new Contact("Surabhi","Sanjan","113/3","Faridabad","Haryana","121002","8989898989","Kanki@gm");
-//     console.log(contact1.toString());
-// } 
-// catch(e) 
-// {
-// console.log(e);
+try
+{
+    let contact1 = new Contact("Surabhi","Sanjan","113/3","Patna","Bihar","121002","8989898989","kdxji@gm");
+    console.log(contact1.toString());
+} 
+catch(e) 
+{
+console.log(e);
     
 }
